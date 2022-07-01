@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculador | Costos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"crossorigin="anonymous">
+</head>
+    <body>
+    
+    <nav class="navbar blue z-depth-4">
+        <h2>Calculador de Costos</h2>
+    </nav>
+
+    <div class="main">
+        <form id="calculadorVacaciones">
+            <input type="text" placeholder="Destino" id="destino" required />
+            <input type="number" placeholder="Dinero Disponible" id="dineroDisponible" required />
+            <input type="number"placeholder="Hospedaje"id="hospedaje"required/>
+            <input type="number" placeholder="Transporte " id="transporte" required/>
+            <input type="number" placeholder="Comida" id="comida" required />
+            <input type="submit" value="Calcular" class="btn blue z-depth-4" id="calcular"/>
+        </form>
+    </div>
+
+<div class="container">
+        <div class="icons">
+            <h5><i class="fas fa-plane"></i></h5>
+            <h5><i class="fas fa-wallet"></i></h5> 
+            <h5><i class="fas fa-money-bill-wave-alt"></i></h5>  
+        </div>
+    
+        <div class="datos">
+            <div class="resultado" id="resultado"></div>
+        </div>
+</div>
+
+<hr>
+
+    <script src="main.js"></script>
+</body>
+</html>
